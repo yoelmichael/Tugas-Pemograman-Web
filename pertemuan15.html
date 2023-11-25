@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript dengan Alert, Prompt, Confirm, dan Form</title>
+</head>
+<body>
+<br>
+<button onclick="showAlert()">Tampilkan Alert</button>
+<br>
+<br>
+<!-- Prompt -->
+<button onclick="showPrompt()">Tampilkan Prompt</button>
+<br>
+<br>
+<!-- Confirm -->
+<button onclick="showConfirm()">Tampilkan Confirm</button>
+<br>
+<br>
+<!-- Form -->
+<form onsubmit="submitForm()">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Submit Form</button>
+</form>
+
+<script>
+    // Fungsi untuk menampilkan alert
+    function showAlert() {
+        alert("Ini adalah pesan dari Alert!");
+    }
+
+    // Fungsi untuk menampilkan prompt dan menangani nilai yang dimasukkan
+    function showPrompt() {
+        const userInput = prompt("Masukkan sesuatu:", "Nilai default");
+        if (userInput !== null) {
+            alert("Anda memasukkan: " + userInput);
+        }
+    }
+
+    // Fungsi untuk menampilkan confirm dan menangani responsnya
+    function showConfirm() {
+        const userResponse = confirm("Apakah Anda yakin?");
+        if (userResponse) {
+            alert("Anda menekan OK!");
+        } else {
+            alert("Anda menekan Batal atau menutup kotak dialog.");
+        }
+    }
+
+    // Fungsi untuk menangani submit form
+    function submitForm() {
+        const nameInput = document.getElementById('name').value;
+        alert("Form telah disubmit dengan nama: " + nameInput);
+    }
+</script>
+
+</body>
+</html>
