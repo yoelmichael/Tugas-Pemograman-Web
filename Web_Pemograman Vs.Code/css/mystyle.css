@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+    font-family:sans-serif ;
+}
+header, 
+section#profil, 
+section#Activities, footer{
+    width: 800px;
+    margin: auto;
+    padding: 15px;
+}
+
+header, 
+section#profil, 
+section#Activities{
+    background-color:white ; 
+    border-bottom: 2px solid black;
+}
+header img{
+    width: 100px; float: left;}
+header h3{
+    float: left; 
+    font-size: 42px; 
+    margin-top: 10px; 
+    margin-left: 20px; 
+    width: 600px; 
+    border-bottom: 7px solid black;
+}
+section#profil h3{
+    margin-bottom: 15px;
+}
+section#profil h3, section#Activities h1{
+    text-align: center; 
+    font-size: 32px;
+    background-color: grey; 
+    color: white; 
+    padding: 10px;
+}
+#profil-content{
+    width: 700; 
+    margin: auto;
+}
+
+#profil-content img{
+    width: 180px; 
+    float: left; 
+    margin-right: 20px; 
+    margin-top: 5px;
+}
+#profil-content #deskripsi-profil{
+    width: 450px; 
+    float: left;
+}
+#profil-content #deskripsi-profil p{
+    text-align: justify;
+}
+.item-activity {
+    padding: 5px;
+}
+.item-activity img, .item-activity p{
+    width: 700px; 
+    display: block; 
+    margin: auto;
+}
+.item-activity video{
+    width: 700px;
+}
+.item-activity iframe{
+    width:500px;
+    border-style: 0px;  
+    margin-left: 120px;
+}
+
+
+.item-activity table{
+    margin: auto;
+}
+.item-activity p{
+        text-align: justify; 
+        margin-top: 10px; 
+        margin-bottom: 25px;
+}
+footer{
+    background-color: black;
+}
+footer a{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    background-color: green;
+    width: 200px;
+    margin: auto;
+    padding: 10px 0;
+}
+footer a:hover{
+    background-color: red;
+}
+
+.fix-container{
+    clear: both;
+}
+.item-activity button {
+.dialog {
+    display: none; /* Sembunyikan dialog box secara default */
+    position: fixed; /* Posisikan dialog box secara fixed */
+    z-index: 1; /* Tempatkan dialog box di atas elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Tambahkan scrollbar jika konten melebihi ukuran dialog box */
+    background-color: rgba(0, 0, 0, 0.4); /* Background semi-transparan */
+  }
+  
+  .dialog-content {
+    background-color: #fff;
+    margin: 15% auto; /* Posisikan konten di tengah secara horizontal */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Atur lebar konten */
+  }
+  
+  #close-dialog {
+    background-color: #f44336; /* Warna merah untuk tombol tutup */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,12 @@
+/* CSS untuk elemen dengan class "judul" */
+.judul {
+    font-size: 24px;
+    color: red;
+  }
+  
+  /* CSS untuk elemen dengan class "teks" */
+  .teks {
+    font-size: 16px;
+    color: blue;
+  }
+  
